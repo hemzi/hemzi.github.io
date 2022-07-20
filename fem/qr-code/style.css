@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* * helpers */
+
+.bold {
+  font-weight: 700;
+}
+
+/* * tags */
+
+body {
+  
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Outfit, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: var(--color-light-gray);
+}
+
+/* * classes */
+.qr-code {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 12px;
+  background-color: var(--color-white);
+}
+
+.qr-code__img {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+.qr-code__text {
+  text-align: center;
+  margin: 10px;
+}
+.qr-code__sub-text {
+  text-align: center;
+  color: var(--color-grayish-blue);
+  font-size: 12px;
+  margin: 10px;
+}
+
+/* FEM Provided */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
